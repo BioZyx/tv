@@ -1,1 +1,227 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>BioZyx's TV!</title>
+		<meta charset="utf-8"/>
+		<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'/>
+		<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'/>
+		<link href='https://fonts.googleapis.com/css?family=Just+Another+Hand' rel='stylesheet' type='text/css'/>
+		<link href="https://fonts.googleapis.com/css?family=Sigmar+One" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/brands.css" integrity="sha384-i2PyM6FMpVnxjRPi0KW/xIS7hkeSznkllv+Hx/MtYDaHA5VcF0yL3KVlvzp8bWjQ" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css" integrity="sha384-sri+NftO+0hcisDKgr287Y/1LVnInHJ1l+XC7+FOabmTTIK0HnE2ID+xxvJ21c5J" crossorigin="anonymous">
+		<style>
+			body{width:98vw;
+				background-image:url('https://lh3.ggpht.com/uYH_F8T_t5xeUHOvnk0er-9926bVzD8XNtKEVyBEepFL3pQzEoEYTukRvfcKezUVHeIFm9gmh0E=w1920-h1200-p-e365-k-no');
+				background-size:100vw;
+				background-position:center;
+				background-attachment:fixed;
+				background-repeat:no-repeat;
+				background-color:#4f4f4f;}
+			body::before{content:"";
+				position:fixed;
+				top:-1vh;
+				left:0;
+				width:100vw;
+				height:1vh;
+				z-index:200;
+				box-shadow:0 0 1vh #000;}
+			.header{background-color:#00c4a7;
+				color:#fff;
+				font-family:"Kaushan Script",cursive;
+				font-size:5vh;
+				height:8vh;
+				width:100vw;
+				top:0;
+				left:0;
+				z-index:100;
+				position:fixed;
+				box-shadow:0 .25vw 0 rgba(0,0,0,.5);}
+			.logo{display:inline-block;
+				margin-left:16.5vw;;
+				font-weight:bold;
+				text-shadow:.25vw .25vw 0 rgba(0,0,0,.5);}
+			.connect{display:inline-block;
+				float:right;
+				margin-right:17.5vw;
+				text-shadow:.25vw .25vw 0 rgba(0,0,0,.5);}
+			.connect i{font-size:3vh;
+				margin-left:2vw;}
+			.content{margin:8vh auto 3vh auto;
+				padding-bottom:2vh;
+				background-color:#4f4f4f;
+				width:66vw;
+				text-align:center;
+				box-shadow:
+					.25vw 0 0 rgba(0,0,0,.5),
+					-.25vw 0 0 rgba(0,0,0,.5);}
+			.live{}
+			.titlish{color:#eee;
+				font-size:4vh;
+				font-family:"Sigmar One",cursive;
+				text-transform:uppercase;
+				text-shadow:.25vw .25vw 0 rgba(0,0,0,.5);}
+			.reddot{width:2.75vh;
+				height:2.75vh;
+				margin-right:.5vw;
+				border-radius:10vw;
+				background-color:#c33;
+				display:inline-block;
+				box-shadow:.25vw .25vw 0 rgba(0,0,0,.5);}
+			iframe{width:50vw;
+				height:56vh;
+				border-radius:.25vw;
+				border:.15vw solid #00c4a7;
+				box-shadow:.25vw .25vw 0 rgba(0,0,0,.5);
+				margin-bottom:1vh;}
+			.presentation{}
+			.videos{}
+			.grid{}
+			.previsu{width:20vw;
+				height:auto;
+				margin:.25vh .33vw;
+				display:inline-block;}
+			.previsu img{width:100%;
+				border-radius:.25vw;
+				box-shadow:.25vw .25vw 0 rgba(0,0,0,.5);
+				border:.15vw solid #00c4a7;
+				filter:sepia(1) saturate(1) hue-rotate(100deg) blur(.1vh);
+				transition:filter .25s;}
+			.previsu img:hover{filter:sepia(0) saturate(1) hue-rotate(0deg) blur(0);}
+			.shop{}
+			.footer{background-color:#00c4a7;
+				color:#fff;
+				text-align:center;
+				font-family:"Just Another Hand",cursive;
+				width:100vw;
+				height:3vh;
+				font-size:1.5vh;
+				padding-top:.5vh;
+				z-index:100;
+				position:fixed;
+				left:0;
+				bottom:0;
+				letter-spacing:.5vw;
+				box-shadow:0 -.25vw 0 rgba(0,0,0,.5);
+				text-shadow:.15vw .15vw 0 rgba(0,0,0,.5);}
+			.footer::after{content:"©2013-2019 BioZyx";}
+			::selection{background-color:#00c4a7;}
+			::-webkit-scrollbar{width:1vw;}
+			::-webkit-scrollbar-track{background-color:#4f4f4f;}
+			::-webkit-scrollbar-thumb{background-color:#00c4a7;
+				border-radius:.5vw;
+				border:.25vw solid #4f4f4f;}
+			::-webkit-scrollbar-thumb:hover{background-color:#00ab92;}
+			::-webkit-scrollbar-thumb:active{background-color:#00debd;}
 
+			.install_button{display:none!important;}
+			#install-button{display:none!important;}
+			.iframe_controls{display:none!important;visibility:hidden!important;}
+			.tumblr_controls{display:none!important;visibility:hidden!important;}
+			.tmblr-iframe{display:none!important;visibility:hidden!important;}
+			#ga_target{display:none!important;visibility:none!important;}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div class="logo">BioZyx's TV!</div>
+			<div class="connect">
+				<i class="fab fa-facebook" onclick="window.open('https://www.facebook.com/itsbiozyx','_blank')"></i>
+				<i class="fab fa-twitter" onclick="window.open('https://www.twitter.com/itsbiozyx','_blank')"></i>
+				<i class="fab fa-youtube" onclick="window.open('https://www.youtube.com/itsbiozyx','_blank')"></i>
+				<i class="fab fa-twitch" onclick="window.open('https://www.twitch.tv/itsbiozyx','_blank')"></i>
+				<i class="fab fa-instagram" onclick="window.open('https://www.instagram.com/itsbiozyx','_blank')"></i>
+				<i class="fab fa-discord" onclick="window.open('https://discord.gg/uJYDatU','_blank')"></i>
+			</div>
+		</div>
+		<div class="content">
+			<div class="live">
+				<div class="titlish"><div class="reddot"></div>live</div>
+				<iframe src="https://www.youtube.com/embed/dCgcixq5_Iw" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
+				<iframe src="https://player.twitch.tv/?channel=itsbiozyx" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
+			</div>
+			<!--<div class="presentation">
+				<div class="titlish">présentation</div>
+				<iframe src="https://www.youtube.com/embed/wBPPBE7iHS0?rel=0" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
+			</div>-->
+			<div class="videos">
+				<div class="titlish">vidéos</div>
+				<div class="grid">
+					<div class="previsu">
+						<a href="https://www.youtube.com/watch?v=JWokwcVGVD4" target="_blank"><img src="https://img.youtube.com/vi/JWokwcVGVD4/maxresdefault.jpg"/></a>
+					</div>
+					<div class="previsu">
+						<a href="https://www.youtube.com/watch?v=zbj4wVyWJ8s" target="_blank"><img src="https://img.youtube.com/vi/zbj4wVyWJ8s/maxresdefault.jpg"/></a>
+					</div>
+					<div class="previsu">
+						<a href="https://www.youtube.com/watch?v=pItkxfspg5Y" target="_blank"><img src="https://img.youtube.com/vi/pItkxfspg5Y/maxresdefault.jpg"/></a>
+					</div>
+				<br/>
+					<div class="previsu">
+						<a href="https://www.youtube.com/watch?v=99DwL8Qnu7I" target="_blank"><img src="https://img.youtube.com/vi/99DwL8Qnu7I/maxresdefault.jpg"/></a>
+					</div>
+					<div class="previsu">
+						<a href="https://www.youtube.com/watch?v=mPt80tfbOeM" target="_blank"><img src="https://img.youtube.com/vi/mPt80tfbOeM/maxresdefault.jpg"/></a>
+					</div>
+					<div class="previsu">
+						<a href="https://www.youtube.com/watch?v=_cLrOR5YLxo" target="_blank"><img src="https://img.youtube.com/vi/_cLrOR5YLxo/maxresdefault.jpg"/></a>
+					</div>
+				<br/>
+					<div class="previsu">
+						<a href="https://www.youtube.com/watch?v=11J60KlMxoQ" target="_blank"><img src="https://img.youtube.com/vi/11J60KlMxoQ/maxresdefault.jpg"/></a>
+					</div>
+					<div class="previsu">
+						<a href="https://www.youtube.com/watch?v=5pN-LA6BWiM" target="_blank"><img src="https://img.youtube.com/vi/5pN-LA6BWiM/maxresdefault.jpg"/></a>
+					</div>
+					<div class="previsu">
+						<a href="https://www.youtube.com/watch?v=kMaRthL0iGw" target="_blank"><img src="https://img.youtube.com/vi/kMaRthL0iGw/maxresdefault.jpg"/></a>
+					</div>
+				<br/>
+					<div class="previsu">
+						<a href="https://www.youtube.com/watch?v=DJqN6NdJXV8" target="_blank"><img src="https://img.youtube.com/vi/DJqN6NdJXV8/maxresdefault.jpg"/></a>
+					</div>
+					<div class="previsu">
+						<a href="https://www.youtube.com/watch?v=VePHgsyqLT4" target="_blank"><img src="https://img.youtube.com/vi/VePHgsyqLT4/maxresdefault.jpg"/></a>
+					</div>
+					<div class="previsu">
+						<a href="https://www.youtube.com/watch?v=KMAS6qKJo0I" target="_blank"><img src="https://img.youtube.com/vi/KMAS6qKJo0I/maxresdefault.jpg"/></a>
+					</div>
+				<br/>
+					<div class="previsu">
+						<a href="https://www.youtube.com/watch?v=Ff5QBbVP9hw" target="_blank"><img src="https://img.youtube.com/vi/Ff5QBbVP9hw/maxresdefault.jpg"/></a>
+					</div>
+					<div class="previsu">
+						<a href="https://www.youtube.com/watch?v=U7saL8zq6zM" target="_blank"><img src="https://img.youtube.com/vi/U7saL8zq6zM/maxresdefault.jpg"/></a>
+					</div>
+					<div class="previsu">
+						<a href="https://www.youtube.com/watch?v=hvMF-Mkmqc0" target="_blank"><img src="https://img.youtube.com/vi/hvMF-Mkmqc0/maxresdefault.jpg"/></a>
+					</div>
+				<br/>
+					<div class="previsu">
+						<a href="https://www.youtube.com/watch?v=gNCmsXFPQz0" target="_blank"><img src="https://img.youtube.com/vi/gNCmsXFPQz0/maxresdefault.jpg"/></a>
+					</div>
+					<div class="previsu">
+						<a href="https://www.youtube.com/watch?v=2_Vxk0_53QU" target="_blank"><img src="https://img.youtube.com/vi/2_Vxk0_53QU/maxresdefault.jpg"/></a>
+					</div>
+					<div class="previsu">
+						<a href="https://www.youtube.com/watch?v=uZdXCdYeGKg" target="_blank"><img src="https://img.youtube.com/vi/uZdXCdYeGKg/maxresdefault.jpg"/></a>
+					</div>
+				<br/>
+					<div class="previsu">
+						<a href="https://www.youtube.com/watch?v=dGlScbbcp74" target="_blank"><img src="https://img.youtube.com/vi/dGlScbbcp74/maxresdefault.jpg"/></a>
+					</div>
+					<div class="previsu">
+						<a href="https://www.youtube.com/watch?v=uKoOqYLaWWU" target="_blank"><img src="https://img.youtube.com/vi/uKoOqYLaWWU/maxresdefault.jpg"/></a>
+					</div>
+					<div class="previsu">
+						<a href="https://www.youtube.com/watch?v=Dwx8Uc-97pg" target="_blank"><img src="https://img.youtube.com/vi/Dwx8Uc-97pg/maxresdefault.jpg"/></a>
+					</div>
+				</div>
+			</div>
+			<div class="shop" style="display:none;">
+				<div class="titlish"><s>shop</s></div>
+			</div>
+		</div>
+		<div class="footer">
+		</div>
+	</body>
+</html>
