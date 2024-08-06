@@ -50,19 +50,45 @@
 				padding-bottom:2vh;
 				background-color:#4f4f4f;
 				width:66vw;
-				height:87vh;
 				text-align:center;
 				box-shadow:
 					.25vw 0 0 rgba(0,0,0,.5),
 					-.25vw 0 0 rgba(0,0,0,.5);}
 			.titlish{color:#eee;
-				font-size:10vh;
+				font-size:4vh;
 				font-family:"Sigmar One",cursive;
 				text-transform:uppercase;
 				text-shadow:.25vw .25vw 0 rgba(0,0,0,.5);}
-     			p{color:#fff;
-         			font-family:"Oswald",sans-serif;
-         			font-size:2vh;}
+			iframe{width:50vw;
+				aspect-ratio:16/9;
+				border-radius:.25vw;
+				border:.15vw solid #00c4a7;
+				box-shadow:.25vw .25vw 0 rgba(0,0,0,.5);
+				margin-bottom:1vh;}
+			.grid{margin-bottom:1vh;}
+			.previsu{width:20vw;
+				height:auto;
+				margin:.25vh .33vw;
+				display:inline-block;}
+			.previsu img{width:100%;
+				border-radius:.25vw;
+				box-shadow:.25vw .25vw 0 rgba(0,0,0,.5);
+				border:.15vw solid #00c4a7;
+				filter:sepia(1) saturate(1) hue-rotate(100deg) blur(.1vh);
+				transition:filter .25s;}
+			.previsu img:hover{filter:sepia(0) saturate(1) hue-rotate(0deg) blur(0);}
+			.more{font-family:"Oswald",sans-serif;
+			     	color:#fff;
+			     	font-weight:bold;
+			     	font-size:2vh;
+			     	text-decoration:none;
+			     	background:linear-gradient(#22e6c9,#00c4a7);
+			     	padding:.2vh 1vw;
+			     	border-radius:.25vw;
+			     	box-shadow:.15vw .15vw 0 rgba(0,0,0,.5);
+			      	text-shadow:.15vw .15vw 0 rgba(0,0,0,.5);}
+			.more:hover{background:linear-gradient(#00c4a7,#22e6c9)}
+			.more:active{background:linear-gradient(#22e6c9,#33f7da)}
 			.footer{background:linear-gradient(#22e6c9,#00c4a7);
 				color:#fff;
 				text-align:center;
