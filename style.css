@@ -124,7 +124,7 @@ iframe
 		font-weight:bold;
 		font-size:2vh;
 		text-decoration:none;
-		background:linear-gradient(#22e6c9,#00c4a7);
+		background:linear-gradient(#33f7da,#00c4a7);
 		padding:.2vh 1vw;
 		border-radius:.25vw;
 		box-shadow:.15vw .15vw 0 rgba(0,0,0,.5);
@@ -133,17 +133,17 @@ iframe
 
 .more:hover
 	{
-		background:linear-gradient(#00c4a7,#22e6c9)
+		background:linear-gradient(#00c4a7,#33f7da)
 	}
 
 .more:active
 	{
-		background:linear-gradient(#22e6c9,#33f7da)
+		background:linear-gradient(#33f7da,#33f7da)
 	}
 
 .footer
 	{
-		background:linear-gradient(#22e6c9,#00c4a7);
+		background:linear-gradient(#33f7da,#00c4a7);
 		color:#fff;
 		text-align:center;
 		font-family:"Just Another Hand",cursive;
